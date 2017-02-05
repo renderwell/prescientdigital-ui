@@ -58,7 +58,10 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
     - "bower_components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js"
     # Paths to 3rd party products
+    # - "src/assets/js/vendor/jquery.themepunch.tools.min.js"
+    # - "src/assets/js/vendor/jquery.themepunch.revolution.min.js"
     - "node_modules/skrollr/src/skrollr.js"
+    - "node_modules/slick-carousel/slick/slick.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"

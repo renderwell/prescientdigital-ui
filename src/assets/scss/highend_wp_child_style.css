@@ -1,0 +1,17 @@
+/*
+ Theme Name:   Highend Child
+ Theme URI:    https://hb-themes.com/themes/highend/
+ Description:  A Flexible, Powerful & Beautiful WordPress Theme by HB-Themes. Mobile ready and optimized for best performance. With the powerful engine and user friendly interface it will allow you to build outstanding websites quick and easy... It comes with Premium Plugins integrated into the theme.
+ Author:       HB-Themes
+ Author URI:   https://www.hb-themes.com
+ Template:     HighendWP
+ Version:      1.0.1
+ Tags:		   Responsive, Page-Builder, Drag&Drop, Clean, Modern, Corporate, Multi-Purpose, Multi-Color
+ Text Domain:  hbthemes
+*/
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+.hb-dropdown-box.language-selector .lang-img{margin-right:8px;display:inline-block;position:relative;top:2px;height:12px;width:18px;background-repeat:no-repeat;background-image:url(https://hb-themes.com/themes/highend_wp/wp-content/themes/HighendWP-child/images/lang-sprite.png);background-position:0 0}.hb-dropdown-box.language-selector .lang-img.de-image{background-position:0 0}.hb-dropdown-box.language-selector .lang-img.en-image{background-position:0 -12px}.hb-dropdown-box.language-selector .lang-img.es-image{background-position:0 -24px}.hb-dropdown-box.language-selector .lang-img.fr-image{background-position:0 -36px}.hb-dropdown-box.language-selector .lang-img.nl-image{background-position:0 -48px}
+.hb-typed-strings {display:none}
+#intercom-container .intercom-launcher{right:80px!important;bottom:12px!important;}

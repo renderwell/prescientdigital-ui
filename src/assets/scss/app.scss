@@ -1,6 +1,11 @@
 @charset 'utf-8';
 
-@import 'settings';
+// PRESCIENT SCSS
+// base
+@import "base/font";
+
+// FOUNDATION SCSS
+@import 'settings'; // ALSO CONTAINS PRESCIENT SETTINGS
 @import 'foundation';
 @import 'motion-ui';
 
@@ -50,8 +55,34 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import 'pixel';
 
+// THIRD PARTY
+// SLICK SLIDER
+@import "slick";
+@import "slick-theme";
+
+
+// PIXEL
+// TODO Isolate only styles that are needed from the pixel css
+// @import "pixel";
+
+// HIGHEND THEME
+// Highend styles, probably not needed
+// @import 'highend_48fea';
+// @import 'highend_wp_child_style';
+// Needed for highend slider
+// @import 'highend_85d03';
+
+
+// PRESCIENT SCSS
+// components
+@import "components/pdm-title-bar";
+
+// layout
+@import "layout/site-header";
+
+
+// TEST PARALLAX
 .test-parallax {
     width: 100%;
     height: 400px;
@@ -76,3 +107,4 @@
     color: #ffffff;
     text-align: center;
 }
+// end TEST PARALLAX

@@ -1,0 +1,21 @@
+
+.title-bar-right {
+    padding-top: rem-calc(10);
+}
+
+// @include breakpoint(large) {
+//     .title-bar {
+//         position: relative;
+//     }
+//
+//     .title-bar-left,
+//     .title-bar-right {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//     }
+//
+//     .title-bar-right {
+//         right: 0;
+//     }
+// }

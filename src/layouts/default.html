@@ -10,9 +10,20 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-absolute position-right" id="offCanvas" data-off-canvas data-options="transition: overlap">
+        {{> navigation}}
+      </div>
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
+      {{> header}}
+
+      <div class="off-canvas-content" data-off-canvas-content>
+        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+        {{> body}}
+
+        {{> footer}}
+      </div>
+    </div>
 
     <script src="{{root}}assets/js/app.js"></script>
   </body>

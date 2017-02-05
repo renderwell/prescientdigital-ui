@@ -1,0 +1,18 @@
+
+.site-header {
+    padding: $global-padding 0;
+}
+
+.top-nav {
+    @include element-invisible;
+}
+
+@include breakpoint(large) {
+    .top-nav {
+        @include element-invisible-off;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
