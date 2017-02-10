@@ -1,6 +1,10 @@
 
+.title-bar {
+    padding: 0 0.5rem;
+}
+
 .title-bar-right {
-    padding-top: rem-calc(10);
+    // padding-top: rem-calc(10);
 }
 
 // @include breakpoint(large) {
