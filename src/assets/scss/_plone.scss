@@ -1,0 +1,15 @@
+
+.portletHeader {
+    font-size: rem-calc(19);
+    font-weight: normal;
+    a {
+        color: $body-font-color;
+    }
+}
+
+@include breakpoint(medium) {
+.portletHeader {
+    font-size: rem-calc(31);
+}
+
+}

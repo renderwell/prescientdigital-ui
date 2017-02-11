@@ -2,7 +2,7 @@
 
 // PRESCIENT SCSS
 // base
-@import "base/font";
+@import "font";
 
 // FOUNDATION SCSS
 @import 'settings'; // ALSO CONTAINS PRESCIENT SETTINGS
@@ -58,24 +58,25 @@
 
 // THIRD PARTY
 // SLICK SLIDER
-@import "slick";
-@import "slick-theme";
+@import "vendor/slick";
+@import "vendor/slick-theme";
 
 
 // PIXEL
 // TODO Isolate only styles that are needed from the pixel css
-// @import "pixel";
+// @import "vendor/pixel";
 
 // HIGHEND THEME
 // Highend styles, probably not needed
-// @import 'highend_48fea';
-// @import 'highend_wp_child_style';
+// @import 'vendor/highend_48fea';
+// @import 'vendor/highend_wp_child_style';
 // Needed for highend slider
-// @import 'highend_85d03';
+// @import 'vendor/highend_85d03';
 
 
 // PRESCIENT SCSS
 // base
+@import "base";
 @import "layout";
 
 // foundation component variations
@@ -84,34 +85,10 @@
 
 // components
 @import "components/media";
+@import "components/parallax";
 
 // page
 @import "page/site-header";
 
-
-// TEST PARALLAX
-.test-parallax {
-    width: 100%;
-    height: 400px;
-    background: url(/assets/img/mountains.jpg) no-repeat fixed;
-}
-
-.test-parallax-bg {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .7);
-}
-
-.test-parallax-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    padding: 1em;
-    margin: 1em auto;
-    color: #ffffff;
-    text-align: center;
-}
-// end TEST PARALLAX
+// plone
+@import "plone";
