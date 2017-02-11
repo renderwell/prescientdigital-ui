@@ -1,0 +1,22 @@
+
+.media {
+    overflow: hidden;
+
+    &__media {
+        float: left;
+        margin-right: $spacing1-0;
+        > * {
+            display: block;
+        }
+    }
+
+    &__media--ext {
+        float: right;
+        margin-left: $spacing1-0;
+    }
+
+    &__content {
+        overflow: hidden;
+        display: block;
+    }
+}

@@ -1,6 +1,11 @@
-// PRESCIENT SETTINGS
+// PRESCIENT PRE SETTINGS
 
-$testvarcolor: #ff0000;
+$spacing0-5: 0.5rem;
+$spacing1-0: 1rem;
+$spacing1-5: 1.5rem;
+$spacing2-0: 2rem;
+$spacing2-5: 2.5rem;
+$spacing3-0: 3rem;
 
 
 // FOUNDATION SETTINGS - OVERRIDE WHERE NECESSARY
@@ -348,8 +353,8 @@ $dropdown-sizes: (
 // 18. Dropdown Menu
 // -----------------
 
-$dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrows: false;
+$dropdownmenu-arrow-color: $body-font-color;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
@@ -625,3 +630,5 @@ $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
+
+// PRESCIENT POST SETTINGS

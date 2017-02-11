@@ -1,0 +1,56 @@
+
+.menu > li {
+    height: 90px;
+}
+
+.menu > li > a {
+    padding: 0 1rem;
+    line-height: 90px;
+    color: $body-font-color;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s;
+        background-color: $primary-color;
+    }
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.menu > li:hover > a:before {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.drilldown > li,
+.menu li li {
+    height: auto;
+}
+
+.drilldown > li a,
+.menu li li a {
+    margin-left: -1px;
+    padding: 0.7rem 1rem;
+    line-height: 1;
+    text-align: left;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid $light-gray;
+    &:before {
+        content: none;
+    }
+    &:hover {
+        background-color: $light-gray;
+        border-left: 1px solid $primary-color;
+    }
+}
+
+.is-dropdown-submenu {
+    min-width: 350px;
+}

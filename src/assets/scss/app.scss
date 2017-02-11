@@ -75,12 +75,18 @@
 
 
 // PRESCIENT SCSS
-// components
-@import "components/pdm-title-bar";
-@import "components/pdm-menu";
+// base
+@import "layout";
 
-// layout
-@import "layout/site-header";
+// foundation component variations
+@import "foundation-component-variations/pdm-title-bar";
+@import "foundation-component-variations/pdm-menu";
+
+// components
+@import "components/media";
+
+// page
+@import "page/site-header";
 
 
 // TEST PARALLAX

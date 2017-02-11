@@ -1,7 +1,7 @@
 $(document).foundation();
 
 $(document).on('ready', function() {
-    $('.hero').slick({
+    $('.hero__slider').slick({
         dots: true,
         infinite: true,
         speed: 500,
@@ -9,7 +9,9 @@ $(document).on('ready', function() {
         cssEase: 'linear',
         autoplay: true,
         autoplaySpeed: 6000,
-        pauseOnHover: false
+        pauseOnHover: false,
+        dots: false,
+        arrows: false
     });
 
     var s = skrollr.init({

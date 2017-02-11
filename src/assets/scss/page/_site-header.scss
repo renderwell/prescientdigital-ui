@@ -1,8 +1,16 @@
 
 .site-header {
-    // padding: $global-padding/2 0;
     height: 90px;
     line-height: 90px;
+    .sticky {
+        background-color: $titlebar-background;
+        &.is-anchored {
+            z-index: 5;
+        }
+    }
+    .is-stuck {
+        border-bottom: 1px solid $light-gray;
+    }
 }
 
 .top-nav {
