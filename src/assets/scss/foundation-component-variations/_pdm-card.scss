@@ -1,0 +1,19 @@
+
+.card--expertise {
+    .card-divider {
+        background-color: $white;
+    }
+    .circle--icon {
+        margin: 0 auto;
+    }
+    &:hover {
+        .circle--icon {
+            width: 100px;
+            height: 100px;
+            background-color: $primary-color;
+            i {
+                color: $white;
+            }
+        }
+    }
+}

@@ -3,6 +3,7 @@
 // PRESCIENT SCSS
 // base
 @import "font";
+@import "../fontello/css/fontello";
 
 // FOUNDATION SCSS
 @import 'settings'; // ALSO CONTAINS PRESCIENT SETTINGS
@@ -75,6 +76,10 @@
 
 
 // PRESCIENT SCSS
+// mixins
+@import "mixins";
+@import "utilities";
+
 // base
 @import "base";
 @import "layout";
@@ -82,10 +87,12 @@
 // foundation component variations
 @import "foundation-component-variations/pdm-title-bar";
 @import "foundation-component-variations/pdm-menu";
+@import "foundation-component-variations/pdm-card";
 
 // components
 @import "components/media";
 @import "components/parallax";
+@import "components/icon";
 
 // page
 @import "page/site-header";

@@ -1,0 +1,10 @@
+
+.circle--icon {
+    @extend .circled-item;
+    width: 80px;
+    height: 80px;
+    border: 1px solid $primary-color;
+    i {
+        color: $primary-color;
+    }
+}
