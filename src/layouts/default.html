@@ -7,6 +7,65 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
+
+    <!-- MASTER SLIDER -->
+	<!-- syntaxHilighter style sheet -->
+    <!--
+	<link rel="stylesheet" type="text/css" href="assets/masterslider/syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="assets/masterslider/syntax-highlighter/styles/shThemeDefault.css" media="all">
+    -->
+
+	<!-- Base MasterSlider style sheet -->
+	<link rel="stylesheet" href="assets/masterslider/style/masterslider.css" />
+
+	<!-- main style -->
+    <!--
+	<link rel="stylesheet" type="text/css" href="assets/masterslider/style/main_style.css" media="all">
+    -->
+
+	<!-- MasterSlider default skin -->
+	<link rel="stylesheet" href="assets/masterslider/style/default_skin.css" />
+
+	<!-- Home slider style -->
+	<link rel="stylesheet" href="assets/masterslider/style/home_slider.css" />
+
+    <!--
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    -->
+
+	<!-- Latest version of jQuery from Google CDN -->
+	<!-- You can remove it if jQuery is already included. -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="assets/masterslider/js/jquery.easing.min.js"></script>
+	<!-- MasterSlider main JS file -->
+	<script src="assets/masterslider/js/masterslider.min.js"></script>
+
+	<!-- Tabs -->
+    <!--
+	<script src="assets/masterslider/js/tab.js"></script>
+	<script src="assets/masterslider/syntax-highlighter/scripts/shCore.js"></script>
+	<script src="assets/masterslider/syntax-highlighter/scripts/shBrushXml.js"></script>
+	<script src="assets/masterslider/syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script src="assets/masterslider/syntax-highlighter/scripts/shBrushJScript.js"></script>
+    -->
+
+    <!--
+	<style type="text/css" media="screen">
+		html{font-size: 100%}
+		body{
+			margin:0;
+			color: #3D3D3D;
+			font: normal 81.25%/1.5 'Lato',arial,sans-serif !important;
+			min-height: 100%;
+		}
+
+		.header{
+			margin:0;
+		}
+	</style>
+    -->
+    <!-- END MASTER SLIDER -->
+
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
@@ -24,6 +83,27 @@
         {{> footer}}
       </div>
     </div>
+
+    <script type="text/javascript">
+
+   var slider = new MasterSlider();
+
+    // adds Arrows navigation control to the slider.
+    slider.control('arrows');
+    slider.control('timebar' , {insertTo:'#masterslider'});
+    slider.control('bullets');
+
+     slider.setup('masterslider' , {
+         width:1400,    // slider standard width
+         height:580,   // slider standard height
+         space:1,
+         layout:'fullwidth',
+         loop:true,
+         preload:0,
+         autoplay:true
+    });
+
+    </script>
 
     <script src="{{root}}assets/js/app.js"></script>
   </body>
