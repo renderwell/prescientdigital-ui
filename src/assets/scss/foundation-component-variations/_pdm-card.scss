@@ -1,10 +1,15 @@
 
+// NOT TO BE USED AT THE MOMENT
 .card--expertise {
     .card-divider {
         background-color: $white;
     }
     .circle--icon {
         margin: 0 auto;
+    }
+    .expand-container {
+        width: 100px;
+        height: 100px;
     }
     &:hover {
         .circle--icon {
@@ -13,7 +18,34 @@
             background-color: $primary-color;
             i {
                 color: $white;
+                line-height: 100px;
+                font-size: 20px;
             }
+        }
+    }
+}
+// end of NOT TO BE USED AT THE MOMENT
+
+.card--expertise {
+    border: none;
+    .card-divider {
+        background-color: $white;
+    }
+    .icon--circled {
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        line-height: 90px;
+        display: inline-block;
+    }
+    &:hover {
+        .icon--circled {
+            background-color: $primary-color;
+            color: $white;
+            transform: scale(1.15);
+            transition: all .1s linear;
         }
     }
 }

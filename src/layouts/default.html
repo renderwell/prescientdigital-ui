@@ -86,21 +86,37 @@
 
     <script type="text/javascript">
 
-   var slider = new MasterSlider();
+    var slider = new MasterSlider();
 
     // adds Arrows navigation control to the slider.
     slider.control('arrows');
-    slider.control('timebar' , {insertTo:'#masterslider'});
+    // slider.control('timebar' , {insertTo:'#masterslider'});
     slider.control('bullets');
 
-     slider.setup('masterslider' , {
-         width:1400,    // slider standard width
-         height:580,   // slider standard height
-         space:1,
-         layout:'fullwidth',
-         loop:true,
-         preload:0,
-         autoplay:true
+    slider.setup('masterslider' , {
+        width:1400,    // slider standard width
+        height:580,   // slider standard height
+        space:1,
+        layout:'fullwidth',
+        loop:true,
+        preload:0,
+        autoplay:true
+    });
+
+    var testimonial_slider = new MasterSlider();
+
+    testimonial_slider.control("arrows", {autohide:false});
+    testimonial_slider.control("bullets", {autohide:false});
+
+    testimonial_slider.setup("testimonial-slider", {
+        width:1000,
+        height:10,
+        centerControls:false,
+        space:5,
+        layout:"fillwidth",
+        autoHeight:true,
+        loop:true,
+        autoplay:true
     });
 
     </script>

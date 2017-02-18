@@ -54,3 +54,31 @@
 .is-dropdown-submenu {
     min-width: 350px;
 }
+
+.off-canvas-absolute {
+    background-color: $white;
+}
+
+.menu > li.js-drilldown-back {
+    > a {
+        position: relative;
+        padding-left: 2rem;
+        &::before {
+            display: block;
+            width: 0;
+            height: 0;
+            border: inset 6px;
+            content: '';
+            border-left-width: 0;
+            border-right-style: solid;
+            border-color: transparent #1779ba transparent transparent;
+            position: absolute;
+            top: 50%;
+            margin-top: -6px;
+            opacity: 1;
+            transform: initial;
+            background-color: transparent;
+            left: 1rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// MAIN SLIDER
+.slide-2 .hps-title2 {
+    // background-color: yellow;
+    width: 800px;
+}
+
+.slide-3 .hps-title3 {
+    background-color: #4063C0;
+    width: 815px;
+    font-size: 28px;
+}
+
+.slide-3 .hps-title4 {
+    width: 815px;
+    font-size: 28px;
+}
+
+.slide-5 .hps-text1 {
+    font-size: 20px;
+    line-height: 23px
+}
+// end MAIN SLIDER
+
+// TESIMONIAL SLIDER
+.testimonial-slider {
+    p {
+    	color: $white;
+    	font-size: 1.7em;
+    	text-align: center;
+    	padding: 80px 120px;
+    	margin: 0;
+    }
+}

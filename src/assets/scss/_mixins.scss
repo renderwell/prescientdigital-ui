@@ -1,8 +1,19 @@
 
-.circled-item {
+// NOT TO BE USED AT THE MOMENT
+// .circled-item {
+//     position: relative;
+//     display: block;
+//     border-radius: 50%;
+//     > * {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+// }
+//
+.expand-container {
     position: relative;
-    display: block;
-    border-radius: 50%;
     > * {
         position: absolute;
         top: 50%;
@@ -10,3 +21,4 @@
         transform: translate(-50%, -50%);
     }
 }
+// end of NOT TO BE USED AT THE MOMENT

@@ -1,10 +1,19 @@
 
+// NOT TO BE USED AT THE MOMENT
 .circle--icon {
-    @extend .circled-item;
+    // @extend .circled-item;
+
+    border-radius: 50%;
+
     width: 80px;
     height: 80px;
     border: 1px solid $primary-color;
+
+    transition: width 0.2s linear, height 0.2s linear;
+
     i {
         color: $primary-color;
+        line-height: 80px;
     }
 }
+// end of NOT TO BE USED AT THE MOMENT
