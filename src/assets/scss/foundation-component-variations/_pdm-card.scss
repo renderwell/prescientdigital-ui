@@ -47,5 +47,23 @@
             transform: scale(1.15);
             transition: all .1s linear;
         }
+        .small-break {
+            background-color: #2980b9;
+            width: 75px;
+        }
+    }
+}
+
+.card--expertise ul {
+    width: 80%;
+    margin: 0 auto;
+    list-style-type: none;
+    li {
+        margin-bottom: $global-margin/2;
+        padding-bottom: $global-padding/2;
+        border-bottom: 1px solid $light-gray;
+        &:hover {
+            border-bottom: 1px solid #2980b9;
+        }
     }
 }
