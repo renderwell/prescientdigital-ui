@@ -1,0 +1,24 @@
+
+.grid-gallery {
+}
+
+.grid-gallery-item {
+    display: block;
+    text-align: center;
+    &__image {
+        display: block;
+        position: relative;
+        &:hover {
+            .hover-overlay {
+                opacity: 1;
+            }
+        }
+        img {
+            margin-bottom: 0;
+        }
+    }
+    &__text {
+        display: block;
+        padding: $global-padding/2 0;
+    }
+}
