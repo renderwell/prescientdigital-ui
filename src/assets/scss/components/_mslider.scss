@@ -1,24 +1,51 @@
 // MAIN SLIDER
+.slide-2 .hps-title1 {
+    background-color: $secondary;
+}
+
 .slide-2 .hps-title2 {
     // background-color: yellow;
     width: 800px;
+    text-transform: none;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.slide-3 .hps-title3,
+.slide-3 .hps-title4 {
+    text-transform: none;
 }
 
 .slide-3 .hps-title3 {
-    background-color: #4063C0;
+    background-color: rgba(64,99,192,0.7);
     width: 815px;
     font-size: 28px;
 }
 
 .slide-3 .hps-title4 {
+    background-color: rgba(0,0,0,0.4);
     width: 815px;
     font-size: 28px;
 }
 
+.slide-3 .hps-amp {
+    width: 500px;
+    color: rgb(100,127,194);
+}
+
+.slide-5 .hps-title1,
+.slide-5 .hps-title2,
+.slide-5 .hps-text1 {
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+
 .slide-5 .hps-text1 {
     font-size: 20px;
-    line-height: 23px
+    line-height: 23px;
+    text-align: center;
 }
+
 // end MAIN SLIDER
 
 // TESIMONIAL SLIDER

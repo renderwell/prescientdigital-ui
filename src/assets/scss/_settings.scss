@@ -7,6 +7,15 @@ $spacing2-0: 2rem;
 $spacing2-5: 2.5rem;
 $spacing3-0: 3rem;
 
+$primary: #2178b0;
+$secondary: #649c22;
+$primary-tint: #195a85;
+$secondary-tint: #4b7500;
+$primary-alternative: #0d5595;
+$primary-alternative-tint: #0a4070;
+$secondary-alternative: #006a4d;
+$secondary-alternative-tint: #005a42;
+
 
 // FOUNDATION SETTINGS - OVERRIDE WHERE NECESSARY
 
@@ -58,12 +67,19 @@ $spacing3-0: 3rem;
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+$global-font-size: 90%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
+// $foundation-palette: (
+//   primary: #1779ba,
+//   secondary: #767676,
+//   success: #3adb76,
+//   warning: #ffae00,
+//   alert: #cc4b37,
+// );
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: #2178b0,
+  secondary: #649c22,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -74,8 +90,9 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: #222222;
-$body-font-family: 'source_sans_proregular', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+$body-font-color: #505050;
+// $body-font-family: 'source_sans_proregular', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+$body-font-family: 'Libre Baskerville', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -116,7 +133,8 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+// $header-font-family: $body-font-family;
+$header-font-family: 'Montserrat', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

@@ -39,6 +39,7 @@
         color: $primary-color;
         line-height: 90px;
         display: inline-block;
+        font-size: 20px;
     }
     &:hover {
         .icon--circled {
@@ -58,6 +59,7 @@
     width: 80%;
     margin: 0 auto;
     list-style-type: none;
+    font-family: $header-font-family;
     li {
         margin-bottom: $global-margin/2;
         padding-bottom: $global-padding/2;
