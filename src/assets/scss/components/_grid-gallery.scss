@@ -3,22 +3,37 @@
 }
 
 .grid-gallery-item {
+    position: relative;
     display: block;
     text-align: center;
     &__image {
         display: block;
         position: relative;
-        &:hover {
-            .hover-overlay {
-                opacity: 1;
-            }
-        }
         img {
             margin-bottom: 0;
+            border: 0;
         }
     }
     &__text {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.4s;
         display: block;
         padding: $global-padding/2 0;
+        color: $white;
+        z-index: 4;
+    }
+    &:hover {
+        .hover-overlay {
+            opacity: 1;
+        }
+        .grid-gallery-item__text {
+            top: 50%;
+            opacity: 1;
+        }
     }
 }
