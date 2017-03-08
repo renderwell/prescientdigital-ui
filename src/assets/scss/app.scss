@@ -96,10 +96,13 @@
 @import "components/mslider";
 @import "components/grid-gallery";
 @import "components/video-gallery";
+@import "components/banner";
+@import "components/callout-panel";
 
 // page
 @import "page/site-header";
 @import "page/site-footer";
 
 // plone
-@import "plone";
+@import "plone/general";
+@import "plone/side-nav";

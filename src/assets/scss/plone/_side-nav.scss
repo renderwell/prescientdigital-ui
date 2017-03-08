@@ -1,0 +1,26 @@
+
+.navTree {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.navTreeItem {
+    margin-bottom: 10px;
+}
+
+.navTreeTopNode {
+    font-family: $header-font-family;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.navTreeTopNode a {
+    color: $body-font-color;
+    &:hover {
+        color: $body-font-color;
+    }
+}
+
+.portletNavigationTree.is-stuck {
+    padding-top: 90px;
+}

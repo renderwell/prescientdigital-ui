@@ -1,69 +1,70 @@
 // MAIN SLIDER
-.slide-2 .hps-title1 {
-    background-color: $secondary;
+.ms-slide-layers {
+    background-color: rgba(0,0,0,0.3);
 }
 
-.slide-2 .hps-title2 {
-    // background-color: yellow;
-    width: 800px;
-    text-transform: none;
-    background-color: rgba(0,0,0,0.4);
-    color: #fff;
+.pdm-slide {
+    color: #ffffff;
 }
 
-.slide-3 .hps-title3,
-.slide-3 .hps-title4 {
-    text-transform: none;
-}
-
-.slide-3 .hps-title3 {
-    background-color: rgba(64,99,192,0.7);
-    width: 815px;
-    font-size: 28px;
-}
-
-.slide-3 .hps-title4 {
-    background-color: rgba(0,0,0,0.4);
-    width: 815px;
-    font-size: 28px;
-}
-
-.slide-3 .hps-amp {
-    width: 500px;
-    color: rgb(100,127,194);
-}
-
-.slide-5 .hps-title1,
-.slide-5 .hps-title2,
-.slide-5 .hps-text1 {
-    left: 50% !important;
-    transform: translateX(-50%);
-}
-
-.slide-5 .hps-text1 {
-    font-size: 20px;
-    line-height: 23px;
+.pdm-slide .slide-content {
+    // top: 50% !important;
+    // left: 50% !important;
+    // transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
 }
 
-.slide-7 .hps-title2 {
-    background-color: $primary;
-    color: $white;
-    text-shadow: none;
-    text-transform: none;
-    padding: 15px;
-    letter-spacing: 1px;
+.pdm-slide .slide-content h3 {
+    font-size: 18px;
+    @include breakpoint(medium) {
+        font-size: 28px;
+    }
+    @include breakpoint(large) {
+        font-size: 40px;
+    }
 }
 
+.pdm-slide .slide-content p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto 20px auto;
+    display: none;
+    @include breakpoint(medium) {
+        display: block;
+    }
+    @include breakpoint(large) {
+        font-size: 18px;
+        max-width: 700px;
+    }
+}
+
+.pdm-slide .view-details {
+    display: inline-block;
+    background-color: $secondary;
+    font-family: $header-font-family;
+    padding: 10px 15px !important;
+    text-transform: uppercase;;
+    color: #ffffff;
+    font-size: 12px;
+    @include breakpoint(medium) {
+        font-size: 14px;
+    }
+}
 // end MAIN SLIDER
 
 // TESIMONIAL SLIDER
 .testimonial-slider {
     p {
     	color: $white;
-    	font-size: 1.7em;
     	text-align: center;
-    	padding: 80px 120px;
     	margin: 0;
+    	padding: 40px 60px 60px 60px;
+        font-size: 18px;
+        @include breakpoint(medium) {
+    	    padding: 80px 120px;
+    	    font-size: 1.7em;
+        }
     }
 }
