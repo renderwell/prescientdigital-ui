@@ -1,0 +1,27 @@
+
+.feature-carousel {
+    a {
+        color: $body-font-color;
+    }
+    img {
+        margin-bottom: $global-margin;
+    }
+    &__item {
+        margin: 0 $global-margin;
+    }
+}
+
+// Slick overrides
+.slick-prev:before,
+.slick-next:before {
+    font-family: fontello;
+    color: $black;
+}
+
+.slick-prev:before {
+    content: '\e801';
+}
+
+.slick-next:before {
+    content: '\e802';
+}

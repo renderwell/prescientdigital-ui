@@ -59,8 +59,8 @@
 
 // THIRD PARTY
 // SLICK SLIDER
-// @import "vendor/slick";
-// @import "vendor/slick-theme";
+@import "vendor/slick";
+@import "vendor/slick-theme";
 
 
 // PIXEL
@@ -98,6 +98,7 @@
 @import "components/video-gallery";
 @import "components/banner";
 @import "components/callout-panel";
+@import "components/feature-carousel";
 
 // page
 @import "page/site-header";
