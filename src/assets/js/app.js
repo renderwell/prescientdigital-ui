@@ -9,11 +9,16 @@ $(document).on('ready', function() {
         function startCounter() {
             $('.counter').each(function () {
                 var $this = $(this);
+                var counter_text = $this.siblings('.counter-text');
+                counter_text.addClass('hide-text');
                 $({ Counter: 0 }).animate({ Counter: $this.text() }, {
                     duration: 4000,
                     easing: 'swing',
                     step: function () {
                         $this.text(Math.ceil(this.Counter));
+                    },
+                    complete: function() {
+                        counter_text.removeClass('hide-text');
                     }
                 });
             });

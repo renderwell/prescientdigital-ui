@@ -95,7 +95,7 @@ function sass() {
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {
-    console.log('PATHS: ' + PATHS.javascript);
+    // console.log('PATHS: ' + PATHS.javascript);
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
     .pipe($.babel({ignore: ['what-input.js']}))

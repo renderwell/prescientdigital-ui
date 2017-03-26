@@ -86,3 +86,14 @@
         }
     }
 }
+
+.menu .top-section {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@include breakpoint(medium) {
+    .menu.vertical li.top-section {
+        display: none;
+    }
+}

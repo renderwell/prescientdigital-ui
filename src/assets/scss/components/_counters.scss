@@ -1,0 +1,8 @@
+
+.counter-text {
+    transition: all .3s ease-in;
+    opacity: 1;
+    &.hide-text {
+        opacity: 0;
+    }
+}

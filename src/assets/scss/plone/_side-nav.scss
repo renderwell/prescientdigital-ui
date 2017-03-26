@@ -5,13 +5,14 @@
 }
 
 .navTreeItem {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
 .navTreeTopNode {
     font-family: $header-font-family;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .navTreeTopNode a {
@@ -23,4 +24,5 @@
 
 .portletNavigationTree.is-stuck {
     padding-top: 90px;
+    z-index: 4;
 }

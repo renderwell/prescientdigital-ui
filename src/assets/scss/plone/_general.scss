@@ -12,10 +12,69 @@
 }
 
 .portletHeader {
-    font-size: rem-calc(19);
+    font-size: 20px;
     font-weight: normal;
     a {
         color: $body-font-color;
+    }
+}
+
+h2.tileHeadline {
+    font-size: 24px
+}
+
+.landingTitle {
+    color: #0a0a0a;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 20px;
+    font-family:"Montserrat";
+}
+
+.callout {
+    border: none;
+    background-color: #649c22;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.callout a {
+    color: #ffffff;
+    border-bottom: 1px dotted rgba(255,255,255,0.9);
+}
+
+.callout a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255,255,255,0.9);
+}
+
+li.navTreeCurrentNode a {
+    color: #505050;
+}
+
+li.navTreeCurrentNode ul li a {
+    color: #1c6797
+}
+
+.navTree.navTreeLevel1 {
+    margin: 10px 0 0 20px;;
+    font-size: 14px;
+}
+
+dl dt {
+    margin-bottom: 0.5rem;
+}
+
+.template-document_view {
+    .portletNavigationTree {
+        &.sticky {
+            margin-top: 22px !important;
+        }
+        &.is-stuck {
+            margin-top: 1em !important;
+        }
     }
 }
 
@@ -24,6 +83,6 @@
         padding-right: $global-padding * 2;
     }
     .portletHeader {
-        font-size: rem-calc(31);
+        font-size: 24px;
     }
 }

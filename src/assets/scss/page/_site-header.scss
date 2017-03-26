@@ -4,17 +4,22 @@
     line-height: 90px;
     .sticky {
         background-color: $titlebar-background;
+        border-bottom: 1px solid $light-gray;
         &.is-anchored {
             z-index: 5;
         }
     }
-    .is-stuck {
-        border-bottom: 1px solid $light-gray;
-    }
+    // .is-stuck {
+    //     border-bottom: 1px solid $light-gray;
+    // }
 }
 
 .top-nav {
     @include element-invisible;
+}
+
+.content-page-header-divider {
+    margin-top: 0;
 }
 
 @include breakpoint(large) {

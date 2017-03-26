@@ -3,19 +3,44 @@
     a {
         color: $body-font-color;
     }
-    img {
-        margin-bottom: $global-margin;
-    }
+    // img {
+    //     margin-bottom: $global-margin;
+    // }
     &__item {
         margin: 0 $global-margin;
+        background-color: #f2f2f2;
+        .text {
+            padding: 10px 20px;
+        }
     }
 }
 
 // Slick overrides
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #333333;
+    &:hover,
+    &:focus {
+        background-color: #333333;
+    }
+}
+
+.slick-prev {
+    left: 5px;
+}
+
+.slick-next {
+    right: 5px;
+}
+
 .slick-prev:before,
 .slick-next:before {
     font-family: fontello;
-    color: $black;
+    color: $white;
 }
 
 .slick-prev:before {
@@ -25,3 +50,47 @@
 .slick-next:before {
     content: '\e802';
 }
+
+@include breakpoint(1220) {
+    .slick-prev {
+        left: -5px;
+    }
+
+    .slick-next {
+        right: -5px;
+    }
+}
+
+// @include breakpoint(600) {
+//     .slick-prev,
+//     .slick-next {
+//         background-color: transparent;
+//         &:hover,
+//         &:focus {
+//             background-color: transparent;
+//         }
+//     }
+//
+//     .slick-prev {
+//         left: -20px;
+//     }
+//
+//     .slick-next {
+//         right: -20px;
+//     }
+//
+//     .slick-prev:before,
+//     .slick-next:before {
+//         color: $black;
+//     }
+// }
+//
+// @include breakpoint(large) {
+//     .slick-prev {
+//         left: -25px;
+//     }
+//
+//     .slick-next {
+//         right: -25px;
+//     }
+// }
