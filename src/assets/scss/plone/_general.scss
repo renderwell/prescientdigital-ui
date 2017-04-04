@@ -78,6 +78,14 @@ dl dt {
     }
 }
 
+.subsection-internet .pageContentCore dd {
+    margin-bottom: 20px;
+}
+
+.panel {
+    @extend .v-space-2;
+}
+
 @include breakpoint(medium) {
     .pageContent {
         padding-right: $global-padding * 2;
