@@ -92,7 +92,7 @@
     font-weight: bold;
 }
 
-@include breakpoint(medium) {
+@include breakpoint(large) {
     .menu.vertical li.top-section {
         display: none;
     }
