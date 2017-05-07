@@ -1,0 +1,64 @@
+
+#portal-searchbox {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    display: none;
+}
+
+
+#portal-advanced-search {
+    display: none;
+}
+
+.LSBox {
+    position: relative;
+    padding-right: 60px;
+    .searchField {
+        margin-bottom: 0;
+        height: 90px;
+        font-size: rem-calc(24);
+        border: 0;
+        box-shadow: none;
+    }
+    .searchButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.searchSection {
+    display: none;
+}
+
+.reveal-search {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    font-size: rem-calc(18);
+}
+
+@include breakpoint(large) {
+.reveal-search {
+    right: 0;
+    font-size: rem-calc(14);
+}
+}
+
+.close-search {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    height: 90px;
+    line-height: 90px;
+    font-size: rem-calc(18);
+}
+
+@include breakpoint(large) {
+.close-search {
+    right: 0;
+}
+}

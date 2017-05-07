@@ -32,22 +32,30 @@ h2.tileHeadline {
     font-family:"Montserrat";
 }
 
+// .callout {
+//     border: none;
+//     background-color: #649c22;
+//     color: #ffffff;
+//     font-size: 24px;
+//     margin-bottom: 1em;
+// }
+//
+// .callout a {
+//     color: #ffffff;
+//     border-bottom: 1px dotted rgba(255,255,255,0.9);
+// }
+//
+// .callout a:hover {
+//     color: #ffffff;
+//     border-bottom: 1px solid rgba(255,255,255,0.9);
+// }
+
 .callout {
-    border: none;
-    background-color: #649c22;
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 1em;
-}
-
-.callout a {
-    color: #ffffff;
-    border-bottom: 1px dotted rgba(255,255,255,0.9);
-}
-
-.callout a:hover {
-    color: #ffffff;
-    border-bottom: 1px solid rgba(255,255,255,0.9);
+    clear: both;
+    background-color: #eee;
+    border: 0;
+    border-left: 1em solid #ccc;
+    padding: 1em;
 }
 
 li.navTreeCurrentNode a {

@@ -2,7 +2,12 @@
 .counter-text {
     transition: all .3s ease-in;
     opacity: 1;
+    font-family: $header-font-family;
+    font-size: 140%;
     &.hide-text {
         opacity: 0;
     }
+}
+
+@include breakpoint(medium) {
 }
