@@ -96,4 +96,8 @@
     .menu.vertical li.top-section {
         display: none;
     }
+
+    .navlevel2.is-dropdown-submenu.js-dropdown-active {
+        display: none !important;
+    }
 }

@@ -4,11 +4,6 @@
     margin-left: 0;
 }
 
-.navTreeItem {
-    margin-bottom: 8px;
-    font-size: 14px;
-}
-
 .navTreeTopNode {
     font-family: $header-font-family;
     font-size: 24px;
@@ -25,4 +20,79 @@
 .portletNavigationTree.is-stuck {
     padding-top: 90px;
     z-index: 4;
+}
+
+.left-hand-column {
+    display: none;
+}
+
+@include breakpoint(large) {
+.left-hand-column {
+    display: block;
+}
+}
+
+#side-nav.is-stuck {
+    display: none;
+}
+
+@include breakpoint(large) {
+#side-nav.is-stuck {
+    display: block;
+    padding-top: 120px;
+    z-index: 4;
+}
+}
+
+.side-nav {
+    padding-top: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+    font-size: 16px;
+}
+
+@include breakpoint(large) {
+.side-nav {
+    padding-top: 15px;
+}
+}
+
+.navTreeItem {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.navTreeItem a {
+    display: block;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #1c6797;
+    line-height: 1em;
+}
+
+@include breakpoint(large) {
+.navTreeItem {
+    display: block;
+}
+
+.navTreeItem a {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+    line-height: 1.4em;
+}
+}
+
+@include breakpoint(large) {
+.menu li.max li {
+    float: left;
+}
+
+li.max .is-dropdown-submenu > li {
+    width: 50%;
+}
+
+li.max .is-dropdown-submenu {
+    min-width: 690px;
+}
 }

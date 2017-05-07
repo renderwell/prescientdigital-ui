@@ -1,5 +1,6 @@
 .banner {
-    background-image: url('/assets/img/about_us.jpg');
+    // background-image: url('/assets/img/about_us.jpg');
+    background-image: url(++theme++pd.theme/assets/img/about_us.jpg);
     background-size: cover;
     background-position: center center;
     &__scrim {
