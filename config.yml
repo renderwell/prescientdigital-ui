@@ -49,9 +49,7 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.offcanvas.js"
     # - "bower_components/foundation-sites/js/foundation.orbit.js"
     - "bower_components/foundation-sites/js/foundation.responsiveMenu.js"
-    - "bower_components/foundation-sites/js/foundation.responsiveToggle.js"
-    - "bower_components/foundation-sites/js/foundation.reveal.js"
-    # - "bower_components/foundation-sites/js/foundation.slider.js"
+    - "bower_components/foundation-sites/js/foundation.slider.js"
     - "bower_components/foundation-sites/js/foundation.sticky.js"
     - "bower_components/foundation-sites/js/foundation.tabs.js"
     - "bower_components/foundation-sites/js/foundation.toggler.js"
@@ -60,7 +58,8 @@ PATHS:
     # Paths to 3rd party products
     # - "src/assets/js/vendor/jquery.themepunch.tools.min.js"
     # - "src/assets/js/vendor/jquery.themepunch.revolution.min.js"
-    - "node_modules/skrollr/src/skrollr.js"
+    # - "node_modules/skrollr/src/skrollr.js"
+    - "src/assets/js/vendor/skrollr.js"
     - "node_modules/slick-carousel/slick/slick.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"

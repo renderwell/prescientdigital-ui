@@ -80,6 +80,7 @@
     <!-- END MASTER SLIDER -->
 
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/3.0.0/lazysizes.min.js"></script
   </head>
   <body>
     <div class="off-canvas-wrapper">
@@ -89,7 +90,7 @@
 
       {{> header}}
 
-      <div class="off-canvas-content" data-off-canvas-content>
+      <div id="skrollr-body" class="off-canvas-content" data-off-canvas-content>
         {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
         {{> body}}
 
